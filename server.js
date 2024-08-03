@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const database = require("./db/db")
 var app = express();
-var PORT = process.env.PORT || 3003;
+var PORT = process.env.PORT;
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
